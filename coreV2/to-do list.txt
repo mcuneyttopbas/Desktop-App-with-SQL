@@ -1,0 +1,4 @@
+-	Kullanıcı Yetkilendirme
+-	Data Models (Personel, Sipariş, Proses, Makine, Maliyet, Ürün)
+-	Tab Widget Management
+-	Database Class

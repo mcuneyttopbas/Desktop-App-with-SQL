@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1100</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_inventory">
+    <property name="title">
+     <string>Depo</string>
+    </property>
+    <widget class="QMenu" name="menuDepo_Transfer">
+     <property name="title">
+      <string>Depo Transfer</string>
+     </property>
+     <addaction name="act_stockAccept"/>
+     <addaction name="act_stockOut"/>
+    </widget>
+    <addaction name="act_inventoryStatus"/>
+    <addaction name="act_inventoryRecords"/>
+    <addaction name="menuDepo_Transfer"/>
+   </widget>
+   <widget class="QMenu" name="menu_dashboard">
+    <property name="title">
+     <string>Genel</string>
+    </property>
+    <addaction name="act_dashboard"/>
+    <addaction name="act_settings"/>
+   </widget>
+   <widget class="QMenu" name="menu_define">
+    <property name="title">
+     <string>Tanım</string>
+    </property>
+    <widget class="QMenu" name="menuHammadde">
+     <property name="title">
+      <string>Hammadde</string>
+     </property>
+     <addaction name="act_productGroup"/>
+     <addaction name="act_productTypes"/>
+     <addaction name="separator"/>
+     <addaction name="act_foam"/>
+     <addaction name="act_fabric"/>
+     <addaction name="act_membrane"/>
+     <addaction name="act_paper"/>
+    </widget>
+    <widget class="QMenu" name="menu_letme">
+     <property name="title">
+      <string>İşletme</string>
+     </property>
+     <addaction name="actionPersonel"/>
+     <addaction name="actionMakine"/>
+    </widget>
+    <addaction name="menuHammadde"/>
+    <addaction name="menu_letme"/>
+    <addaction name="actionProses"/>
+   </widget>
+   <addaction name="menu_dashboard"/>
+   <addaction name="menu_define"/>
+   <addaction name="menu_inventory"/>
+  </widget>
+  <action name="actionMalzemeler">
+   <property name="text">
+    <string>Malzemeler</string>
+   </property>
+  </action>
+  <action name="act_inventoryStatus">
+   <property name="text">
+    <string>Depo Durum</string>
+   </property>
+  </action>
+  <action name="act_inventoryRecords">
+   <property name="text">
+    <string>Depo Hareketleri</string>
+   </property>
+  </action>
+  <action name="act_productCards">
+   <property name="text">
+    <string>Malzeme Kartları</string>
+   </property>
+  </action>
+  <action name="act_productGroups">
+   <property name="text">
+    <string>Malzeme Grupları</string>
+   </property>
+  </action>
+  <action name="act_dashboard">
+   <property name="text">
+    <string>Dashboard</string>
+   </property>
+  </action>
+  <action name="act_settings">
+   <property name="text">
+    <string>Ayarlar</string>
+   </property>
+  </action>
+  <action name="act_addFoam">
+   <property name="text">
+    <string>Ekle</string>
+   </property>
+  </action>
+  <action name="act_listFoam">
+   <property name="text">
+    <string>Listele</string>
+   </property>
+  </action>
+  <action name="act_addFabric">
+   <property name="text">
+    <string>Ekle</string>
+   </property>
+  </action>
+  <action name="act_listFabric">
+   <property name="text">
+    <string>Listele</string>
+   </property>
+  </action>
+  <action name="actionEkle_3">
+   <property name="text">
+    <string>Ekle</string>
+   </property>
+  </action>
+  <action name="actionListele_3">
+   <property name="text">
+    <string>Listele</string>
+   </property>
+  </action>
+  <action name="act_addChemical">
+   <property name="text">
+    <string>Ekle</string>
+   </property>
+  </action>
+  <action name="act_listChemical">
+   <property name="text">
+    <string>Listele</string>
+   </property>
+  </action>
+  <action name="act_addMembrane">
+   <property name="text">
+    <string>Ekle</string>
+   </property>
+  </action>
+  <action name="act_listMembrane">
+   <property name="text">
+    <string>Listele</string>
+   </property>
+  </action>
+  <action name="actionKa_t">
+   <property name="text">
+    <string>Kağıt</string>
+   </property>
+  </action>
+  <action name="act_productGroup">
+   <property name="text">
+    <string>Malzeme Grup</string>
+   </property>
+  </action>
+  <action name="act_productTypes">
+   <property name="text">
+    <string>Malzeme Cins</string>
+   </property>
+  </action>
+  <action name="actionProses">
+   <property name="text">
+    <string>Proses</string>
+   </property>
+  </action>
+  <action name="actionPersonel">
+   <property name="text">
+    <string>Personel</string>
+   </property>
+  </action>
+  <action name="actionMakine">
+   <property name="text">
+    <string>Makine</string>
+   </property>
+  </action>
+  <action name="act_foam">
+   <property name="text">
+    <string>Sünger</string>
+   </property>
+  </action>
+  <action name="act_fabric">
+   <property name="text">
+    <string>Astar</string>
+   </property>
+  </action>
+  <action name="act_membrane">
+   <property name="text">
+    <string>Membran</string>
+   </property>
+  </action>
+  <action name="act_paper">
+   <property name="text">
+    <string>Kağıt</string>
+   </property>
+  </action>
+  <action name="act_stockAccept">
+   <property name="text">
+    <string>Depo Giriş</string>
+   </property>
+  </action>
+  <action name="act_stockOut">
+   <property name="text">
+    <string>Depo Çıkış</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../../pyqt5/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
